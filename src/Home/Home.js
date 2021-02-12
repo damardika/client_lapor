@@ -8,13 +8,18 @@ export default class Home extends Component {
     return (
       <div>
       <header>
-        <div align="center">
-        <img src="image/gamabar1.png" alt="gamabar1"position='absolute'
-    bottom="0"
-    left="0"
-    width="1225px"
-    height="650px"
-    background="red" />
+        <div className="overlay" />
+        <video playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
+          <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" />
+        </video>
+        <div className="container h-100">
+          <div className="d-flex h-100 text-center align-items-center">
+            <div className="w-100 text-white">
+            
+              <h1 className="display-3">PENGADUAN</h1>
+             
+            </div>
+          </div>
         </div>
       </header>
       <section className="my-5">
@@ -22,8 +27,6 @@ export default class Home extends Component {
           <div className="row">
          
             <div className="col-md-8 mx-auto">
-               
-            
             
               
                <p> {""}Dibentuk untuk merealisasikan kebijakan “no wrong door policy”
@@ -51,7 +54,7 @@ export default class Home extends Component {
            
             </div>
             <div>
-          <Chatbox />
+          <Chatbox /><img src="image/gamabar1.png" alt="gamabar1" height="270px" width="auto" padding="150px" align="right" />
         </div>
           </div>
         </div>

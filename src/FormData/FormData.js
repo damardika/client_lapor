@@ -4,37 +4,30 @@ import './FormData.css'
 export default class Login extends Component {
     render() {
         return (
-            <form className="Data">
-              
+            <div className="data">
+           
+            <div>
+            <form>
+            <label>Masukan Nama</label>
+            <input type="text" id="fname" name="firstname" placeholder="Masukan nama.." />
+            <label>No telfon</label>
+            <input type="text" id="Notelp" name="NoTelfon" placeholder="Masukan nomor telfon.." />
+            
+        
+        
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukan email" />
+            <label>Jenis Kejadian</label>
+            <input type="text" id="Kejadian" name="kejadian" placeholder="Masukan kejadian.." />
 
-                <div className="form-group">
-                    <label>Nama </label>
-                    <input type="Nama" className="form-control" placeholder="Masukan Nama" />
-                </div>
-                <div className="form-group">
-                    <label>No Telp </label>
-                    <input type="No Telp" className="form-control" placeholder="Masukan Nomor" />
-                </div>
-                <div className="form-group">
-                    <label>Email </label>
-                    <input type="Email" className="form-control" placeholder="Masukan Email" />
-                </div>
-                <div className="form-group">
-                    <label>Jenis Kejadian </label>
-                    <input type="JenisKejadian" className="form-control" placeholder="Masukan Jenis Kejadian" />
-                </div>
-                <div>
-                <label for="IsiData" className='textlabel'>Deskripsi Pelaporan : </label><br/>
-               <textarea className="text-area-style" rows="4" cols="50"> </textarea>
-               
-                </div>
-          
-                
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-               
-               
-               
+        
+        
+            <label>Subject Kejadian</label>
+            <textarea id="subject" name="subject" placeholder="Masukan Kejadian.."></textarea>
+            <input type="submit" value="Submit" />
             </form>
+            </div>
+            </div>
         );
     }
 }

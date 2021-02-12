@@ -4,6 +4,7 @@ import { Router, Switch, Route } from "react-router-dom";
 import DataMasuk from "./DataMasuk/DataMasuk";
 import StatusData from "./StatusData/StatusData";
 import FormData from "./FormData/FormData";
+import DataInformasi from "./DataInformasi/DataInformasi";
 import Home from "./Home/Home";
 import history from "./history";
 
@@ -16,6 +17,7 @@ export default class Routes extends Component {
           <Route path="/DataMasuk" component={DataMasuk} />
           <Route path="/StatusData" component={StatusData} />
           <Route path="/FormData" component={FormData} />
+          <Route path="/DataInformasi" component={DataInformasi} />
         </Switch>
       </Router>
     );

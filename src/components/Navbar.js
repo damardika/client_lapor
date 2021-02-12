@@ -1,7 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Dropdown } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
+import DropdownButton from 'react-bootstrap/DropdownButton'
 
 const Navigation = (props) => {
   console.log(props);
@@ -12,9 +13,17 @@ const Navigation = (props) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-         
+          
           <Nav.Link href="/FormData">Form Data</Nav.Link>
-          <Nav.Link href="/StatusData">Status Data</Nav.Link>
+          
+          
+          <DropdownButton id="dropdown-basic-button" title="Status Data">
+          <Dropdown.Item href="/StatusData">Status </Dropdown.Item>
+          <Dropdown.Item href="/DataInformasi">Data Informasi</Dropdown.Item>
+        
+          </DropdownButton>
+    
+          
         </Nav>
       </Navbar.Collapse>
     </Navbar>
